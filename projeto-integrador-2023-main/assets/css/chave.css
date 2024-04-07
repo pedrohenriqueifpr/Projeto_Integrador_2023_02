@@ -1,0 +1,214 @@
+header{
+    position: fixed;
+    z-index: 1020;
+}
+nav {
+    align-items: center;
+}
+main {
+    background-color: #dcdcdc;
+    margin-top: 4.4em;
+    flex-direction:row;
+    padding:0; 
+    width:100%;
+}
+/* LISTA DE EQUIPES */
+aside {
+    min-width: 275px;
+    max-width: 275px;
+    padding: 0.5em;
+    color: #fff;
+    background-color: #24272a;
+}
+
+aside {
+    z-index: 1000;
+    width: 300px;
+    background-color: #24272a;
+    position: absolute;
+    left: 0; 
+    height:fit-content;
+    border-radius: 0 0 0.3em;
+    transition: left 0.3s ease-in-out; /* Transição suave */
+}
+#toggle-aside-btn {
+    z-index: 1001;
+    border:none;
+    border-bottom: 0 0.5em 0 0.5em;
+    position: absolute;
+    color:#fff;
+    background-color: #24272a;
+    cursor: pointer;
+    height:min-content;
+}
+
+.mostrar {
+    left: 0; /* Define para exibir */
+}
+
+.esconder {
+    left: -300px; /* Define para ocultar */
+}
+
+.adicionar{
+    display: flex;
+    flex-direction: column;
+    gap:0.5em;    
+    margin-bottom: 1em;
+}
+.input-box{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: center;
+}
+.adicionar-btn{
+    cursor:pointer;
+    color: #fff;
+    background-color: #f4b223;
+    border-radius: 0.2em;
+    border: none;
+    padding: 0.5em;
+    transition: transform ease-in-out 250ms;
+}
+.adicionar-btn:hover{
+    background-color: #f4b223;
+    transform: scale(1.05);
+}
+#nome{
+    width: 85%;
+    margin-left: 0.5em;
+    border-radius: 0.2em;
+    outline: none;
+    border: none;
+    padding: 0.5em;
+    text-align: center;
+}
+.adicionar input::file-selector-button{
+    background-color: #ccc;
+    border: none;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    cursor: pointer;
+    transition: transform ease-in-out 250ms;
+}
+.adicionar input::file-selector-button:hover{
+    transform: scale(1.05);
+}
+.remover-btn {
+    align-items: center;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: transform ease-in-out 250ms;
+}
+.remover-btn:hover {
+    transform: scale(1.2);
+}
+#listaEquipes{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    gap:0.5em;
+    text-align: center;
+}
+.equipe {
+    display: flex;
+    border-bottom: 2px solid #777;
+    padding: 0.5em;
+    justify-content: space-between;
+    align-items: center;
+}
+.equipe img {
+    width: 50px;
+    height: 50px;       
+}
+.info-equipe{
+    display: flex;
+    align-items: center;
+    gap:0.5em;
+}
+
+/* BOTÕES */
+
+nav button {
+    margin: 0 0.5em;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0.5em;
+    background-color:#111;
+    border: none;
+    font-size: 1em;
+    padding: 0.6em;
+    transition: ease-in-out 300ms;
+    overflow: hidden;
+}
+nav button:hover{
+    background-color: #3f454b;
+}
+
+/* CHAVE */
+section {
+    flex: 1;
+    margin-left: 300px;
+    min-width: 80%;
+}
+#chave, #repescagem{
+    display: flex;
+    flex-direction: row;
+    gap:1em;
+    padding: 1em;
+}
+h1{
+    text-align: center;
+    padding: 0.5em;
+}
+.rodada{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:1.5em;
+}
+.dupla{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+}
+.dupla img{
+    width: 80px;
+    height: 80px;
+}
+.equipe1, .equipe2{
+    text-align:center;
+    display: flex;
+    color: #fff;
+    background-color: #008591;
+    font-size: 1.2em;
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+}
+.equipe1{
+    border-bottom: 2px solid #ccc;
+}
+.equipe1 i, .equipe2 i{
+    font-size: 1.3em;
+    cursor: pointer;
+}
+.desfazer{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    font-size: 1.5em;
+    margin: auto;
+}
+.desfazer i {
+    cursor: pointer;
+    transition: ease-out 250ms;
+}
+.desfazer i:hover{
+    transform: scale(1.1);
+}

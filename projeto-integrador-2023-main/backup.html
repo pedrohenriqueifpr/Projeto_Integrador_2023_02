@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/icon.ico" type="image/x-icon">
+    <title>Controle de Equipes</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/backup.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="assets/img/ctrl3d.png" alt="Ctrl3D">
+            <ul>        
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="backup.html">Backup</a></li>
+            </ul>
+            <div class="hamburguer">
+                <span class="bar"></span> 
+                <span class="bar"></span> 
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Salve sua lista de equipes</h2>
+        <article> 
+            <button id="exportar-btn">Exportar Equipes</button>
+        </article>
+        <h2>Recupere uma lista de equipes</h2>
+        <article>  
+            <input type="file" id="fileInput" />
+            <button id="importar-btn">Importar Equipes</button>           
+        </article>
+    </main>
+    <footer>&copy; 2023</footer>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/backup.js"></script>
+</body>
+</html>

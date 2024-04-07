@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chaveamento</title>
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/chave.css">
+        <link rel="shortcut icon" href="assets/img/icon.ico" type="image/x-icon">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <img class="logo" src="assets/img/ctrl3d.png" alt="Ctrl3D">
+
+                <button  onclick="btnCriarChaves()">Gerar Chave</button>
+                <button onclick="avancarChaves()">Avançar Chave</button>  
+                <button onclick="voltarChaves()">Retroceder Chave</button>
+                <button onclick="captureScreen()">Capturar Tela</button>
+ 
+                <ul>        
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="backup.html">Backup</a></li>
+                </ul>
+                <div class="hamburguer">
+                    <span class="bar"></span> 
+                    <span class="bar"></span> 
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+
+        <main> 
+            <button id="toggle-aside-btn" onclick="toggleAside()">&#9776;</button>
+
+        
+            <aside id="aside" class="mostrar">
+                <div class="adicionar">
+                    <div class="input-box">
+                        <input id="nome" placeholder="Nome da Equipe" type="text" autocomplete="off">
+                        <button class="adicionar-btn" onclick="adicionarEquipes()"><i class="bi bi-check-lg"></i></button>
+                    </div>
+                    <input type="file" id="inputLogo" accept="image/*">
+                </div>
+
+                <div id="listaEquipes"></div>
+            </aside>
+
+            <section>
+
+                
+                <h1>Chave Principal</h1>
+                <div id="chave">
+                </div>
+                <hr>
+                <h1>Chave Repescagem</h1>
+                <div id="repescagem">
+                </div>
+
+            </section>
+        </main>
+
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/chave.js"></script>
+    </body>
+</html>
